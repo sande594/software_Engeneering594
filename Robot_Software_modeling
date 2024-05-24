@@ -1,0 +1,80 @@
+# Robotic System Design using Software Engineering Models
+
+This document outlines the design of a robotic system using various software engineering models, including context, interaction, structural, behavioral, and model-driven engineering models.
+
+## 1. Context Model
+
+The context model shows the environment in which the robotic system operates and how it interacts with external entities.
+
+### Events:
+1. **Power On** - The robot is powered up.
+2. **Receive Command** - The robot receives a command from a user or a control system.
+3. **Battery Low** - The robot detects a low battery level.
+4. **Obstacle Detected** - The robot's sensors detect an obstacle.
+5. **Shutdown** - The robot is powered down.
+
+### Diagram:
+![Context Diagram](attachment:context_diagram.png)
+
+## 2. Interaction Model
+
+The interaction model details the interactions between the system components and with external entities.
+
+### Events:
+1. **User Issues Command** - The user sends a command to the robot.
+2. **Sensor Sends Data** - The sensors send data to the control unit.
+3. **Control Unit Processes Data** - The control unit processes the sensor data.
+4. **Control Unit Sends Instructions** - The control unit sends movement instructions to the motors.
+5. **Robot Executes Movement** - The robot executes the movement based on the instructions.
+
+### Diagram:
+![Interaction Diagram](attachment:interaction_diagram.png)
+
+## 3. Structural Model
+
+The structural model shows the organization of the system in terms of components and their relationships.
+
+### Events:
+1. **Initialize System** - Initialize the components at startup.
+2. **Connect Sensors** - Establish communication with sensors.
+3. **Link Control Unit and Motors** - Connect the control unit to the motors.
+4. **Activate Communication Module** - Activate the module for receiving commands.
+5. **Check System Integrity** - Periodic checks for the system’s integrity.
+
+### Diagram:
+![Structural Diagram](attachment:structural_diagram.png)
+
+## 4. Behavioral Model
+
+The behavioral model describes the dynamic behavior of the system, typically using state diagrams or activity diagrams.
+
+### Events:
+1. **Standby State** - The robot is in standby waiting for commands.
+2. **Processing Command State** - The robot processes a received command.
+3. **Navigating State** - The robot is navigating to a target location.
+4. **Obstacle Avoidance State** - The robot avoids an obstacle.
+5. **Charging State** - The robot is in the charging state when battery is low.
+
+### Diagram:
+![Behavioral Diagram](attachment:behavioral_diagram.png)
+
+## 5. Model-Driven Engineering (MDE)
+
+MDE uses models as primary artifacts throughout the engineering process. Here, we develop and transform models to generate the system.
+
+### Events:
+1. **Define Use Case Models** - Define use case models for the robotic system.
+2. **Create Platform Independent Model (PIM)** - Create a high-level, platform-independent model.
+3. **Transform PIM to Platform Specific Model (PSM)** - Transform the PIM into a PSM.
+4. **Generate Code from PSM** - Generate the executable code from the PSM.
+5. **Deploy and Test System** - Deploy the system and perform tests.
+
+### Diagram:
+![MDE Diagram](attachment:mde_diagram.png)
+
+## Summary Diagram Files
+- **Context Diagram**: Illustrates the context and external interactions of the robot.
+- **Interaction Diagram**: Details the interactions between system components and users.
+- **Structural Diagram**: Shows the organization and relationships of system components.
+- **Behavioral Diagram**: Depicts the dynamic behavior and state transitions of the robot.
+- **MDE Diagram**: Outlines the model-driven engineering process.
